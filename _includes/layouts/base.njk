@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or "Site" }}</title>
+    <link rel="stylesheet" href="/styles/wiki.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container" style="padding: 0.75rem 1rem; display: flex; align-items: center; gap: 1rem;">
+        <a href="/" class="brand" style="font-weight: 700; color: inherit; text-decoration: none;">Home</a>
+      </div>
+      <span class="header__bar" aria-hidden="true"></span>
+    </header>
+
+    <div class="site">
+      <aside class="sidebar">
+        {% block sidebar %}{% endblock %}
+      </aside>
+      <main class="content">
+        {% block content %}{% endblock %}
+      </main>
+    </div>
+
+    <script type="module" src="/scripts/site.js"></script>
+  </body>
+</html>

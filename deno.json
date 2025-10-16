@@ -1,0 +1,33 @@
+{
+  "tasks": {
+    "dev": "deno run -A lume/cli.ts -s -p 3000 -w",
+    "build": "deno run -A lume/cli.ts",
+    "preview": "deno run -A deno_deploy.ts",
+    "deploy": "deno run -A jsr:@deno/deployctl deploy --project=blog52 --entrypoint=deno_deploy.ts --include=_site --include=deno_deploy.ts",
+    "fmt": "deno fmt",
+    "lint": "deno lint"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v3.0.11/"
+  },
+  "fmt": {
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": false
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "deploy": {
+    "project": "24937884-8424-4a09-aed9-73898c624495",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "deno_deploy.ts"
+  }
+}

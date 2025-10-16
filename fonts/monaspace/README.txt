@@ -1,0 +1,1 @@
+Place Monaspace variable fonts here (e.g., MonaspaceNeonVar.woff2 and MonaspaceNeonVar-Italic.woff2). Update styles/wiki.css @font-face src URLs if you use different filenames.

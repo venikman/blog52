@@ -1,0 +1,21 @@
+_site
+_cache
+.DS_Store
+.lume/
+.pagefind/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Hosting/platform directories
+.vercel/
+.netlify/
+
+# Test coverage output
+coverage/
+
+# IDE/editor settings
+.vscode/
+.idea/

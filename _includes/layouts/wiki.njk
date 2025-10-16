@@ -1,0 +1,20 @@
+{% extends "layouts/base.njk" %}
+
+{% block sidebar %}
+<div>
+  <div id="search" data-hints='["Search: RFD 1", "Search: Deno tasks", "Search: code snippets"]'></div>
+
+  {% for year in ["2024", "2023"] %}
+  <div class="year-heading">{{ year }}</div>
+  <ul class="nav-list">
+    {% for p in wikiPagesByYear[year] or [] %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block content %}
+{{ content | safe }}
+{% endblock %}
