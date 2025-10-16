@@ -43,7 +43,9 @@ async function collectMdPaths(dir: string, base: string, acc: string[] = []): Pr
   return acc;
 }
 
-async function buildWikiIndex(years: string[]): Promise<{ byYear: Record<string, WikiPage[]>; linkBySlug: Record<string, string> }> {
+async function buildWikiIndex(
+  years: string[],
+): Promise<{ byYear: Record<string, WikiPage[]>; linkBySlug: Record<string, string> }> {
   const byYear: Record<string, WikiPage[]> = {};
   const linkBySlug: Record<string, string> = {};
 

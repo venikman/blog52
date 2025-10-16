@@ -9,7 +9,13 @@ if (bar) {
   if (header) {
     ["mouseenter", "focusin"].forEach((evt) => {
       header.addEventListener(evt, () => {
-        anime({ targets: bar, opacity: [0.6, 1], easing: "easeInOutSine", direction: "alternate", duration: 500 });
+        anime({
+          targets: bar,
+          opacity: [0.6, 1],
+          easing: "easeInOutSine",
+          direction: "alternate",
+          duration: 500,
+        });
       });
     });
   }

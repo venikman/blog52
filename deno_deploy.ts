@@ -1,4 +1,4 @@
-import { serveDir } from "jsr:@std/http/file-server";
+import { serveDir } from "jsr:@std/http@1.0.20/file-server";
 
 // Static file server for Deno Deploy serving the prebuilt _site directory
 Deno.serve((req) => {

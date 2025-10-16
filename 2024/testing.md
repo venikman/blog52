@@ -10,11 +10,13 @@ tags:
 This page exists to verify the site build, markdown rendering, and code highlighting.
 
 ## Lists
+
 - Item one
 - Item two
 - Item three
 
 ## Code
+
 ```ts
 // TypeScript sample
 function greet(name: string) {
@@ -25,7 +27,9 @@ greet("World");
 ```
 
 ## Blockquote
+
 > This is a test blockquote.
 
 ## Link
+
 [Back to Home](/)
