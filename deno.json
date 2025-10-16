@@ -3,7 +3,7 @@
     "dev": "deno run -A lume/cli.ts -s -p 3000 -w",
     "build": "deno run -A lume/cli.ts",
     "preview": "deno run -A deno_deploy.ts",
-    "deploy": "deno run -A jsr:@deno/deployctl deploy --project=blog52 --entrypoint=deno_deploy.ts --include=_site --include=deno_deploy.ts",
+    "deploy": "deno run -A jsr:@deno/deployctl deploy --project=wpldev --entrypoint=deno_deploy.ts --include=_site --include=deno_deploy.ts",
     "fmt": "deno fmt",
     "lint": "deno lint"
   },
@@ -23,7 +23,7 @@
     }
   },
   "deploy": {
-    "project": "24937884-8424-4a09-aed9-73898c624495",
+    "project": "wpldev",
     "exclude": [
       "**/node_modules"
     ],
