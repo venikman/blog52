@@ -55,7 +55,7 @@ async function buildWikiIndex(
     const pages: WikiPage[] = relPaths.map((rel) => {
       const baseName = rel.replace(/\.md$/i, "").split("/").pop() || "index";
       const slug = toSlug(baseName);
-      const url = "/" + year + "/" + rel.replace(/\.md$/i, "") + "/";
+      const url = "/" + year + "/" + slug + "/";
       const title = unslugify(baseName);
       return { year, relPath: rel, slug, url, title };
     });
