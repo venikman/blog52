@@ -1,5 +1,3 @@
 # blog52
 
 A static site blog built with Lume and deployed on Deno Deploy.
-
-Last updated: $(date)
